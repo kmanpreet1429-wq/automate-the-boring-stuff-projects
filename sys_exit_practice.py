@@ -1,13 +1,7 @@
-#PROGRAM: System Exit Practice Loop
-#Description: continuously echoes user inputs until the keyword 'exit' is typed.
-
-import sys # Import the core system module to excess the exit tool
+import sys 
 print('Program started...')
-
-while True: # Begin an infinite loop
+while True: 
     num = input('Enter:')
-
-    if num == 'exit': # Checks if the user typed exit
-        sys.exit() # Cleanly terminates program execution
-
+    if num == 'exit': 
+        sys.exit() 
     print('You entered ' + num + '.')
