@@ -1,9 +1,6 @@
-#PROGRAM: Interactive System Menu with Clean Exit
-#Description: Implements a menu loop that runs until sys.exit() is triggered
-
-import sys # Imports the system modules
+import sys 
 while True:
-    response = input('Enter a number (1 or 2 or 3): ') # Takes input from the user as strings
+    response = input('Enter a number (1 or 2 or 3): ') 
     if response == '1':
         print('Hello')
     elif response == '2':
