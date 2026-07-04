@@ -1,21 +1,15 @@
-#PROGRAM: Rock, Paper, Scissors
-#Description: A text-based Rock, Paper, Scissors game where the player competes against the computer. Keeps track of wins, losses and ties.
 import random,sys
-
-#Initialize game statistics
 wins = 0
 losses = 0
 ties = 0
 
-#Main game loop
 while True:
 
-    print(f'{wins} wins, {losses} losses, {ties} ties') #Display the current score
+    print(f'{wins} wins, {losses} losses, {ties} ties') 
 
-    print('enter your move:') #Takes input from the user for their move
-    mymove = input().lower() #Converts input to lowercase to handle accidental capital letters
+    print('enter your move:') 
+    mymove = input().lower()
 
-    #Player choice
     if mymove == 'q':
         sys.exit()
     elif mymove == 'r':
@@ -27,7 +21,7 @@ while True:
     else:
         print('Type r, p, s or q')
         continue
-    #Computer move
+    
     randomNumber = random.randint(1,3)
 
     if randomNumber == 1:
