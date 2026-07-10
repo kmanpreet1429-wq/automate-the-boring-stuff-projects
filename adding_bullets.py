@@ -14,5 +14,5 @@ for i in range(n):
 line = '\n'.join(lines) 
 
 text = pyperclip.copy(line)
-print ('After: 'line)
+print('After: ',line)
 
